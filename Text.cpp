@@ -17,11 +17,8 @@ void Text::SetText(string newFont, int newSize, string newColor,
 }
 
 string Text::GetTextFont() const { return font; };
-
 int Text::GetTextSize() const { return size; };
-
 string Text::GetTextColor() const { return color; };
-
 string Text::GetTextData() const { return data; };
 
 void Text::PrintText() const {
