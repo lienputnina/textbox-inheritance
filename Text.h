@@ -14,16 +14,15 @@ protected:
 
 public:
   Text(string font, int size, string color, string data);
-  ~Text();
 
-  Text SetText(string font, int size, string color, string data);
+  void SetText(string font, int size, string color, string data);
 
   string GetTextFont() const;
   int GetTextSize() const;
   string GetTextColor() const;
   string GetTextData() const;
 
-  void PrintText(Text &textObject) const;
+  void PrintText() const;
 };
 
 #endif
