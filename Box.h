@@ -6,6 +6,10 @@ using namespace std;
 
 class Box {
 
+  /*
+     Using the'protected' type to give the derived class access to this
+     variable
+  */
 protected:
   int width;
   int height;
@@ -14,7 +18,7 @@ protected:
 public:
   Box(int width, int height, string border_color);
 
-  void SetBox(int width, int height, string border_color);
+  void SetBox(int newBoxWidth, int newBoxHeight, string new_box_border_color);
 
   int GetBoxWidth() const;
   int GetBoxHeight() const;

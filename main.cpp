@@ -1,26 +1,36 @@
-#include "Box.h"
-#include "Text.h"
+#include "TextBox.h"
 
 #include <iostream>
 
 int main() {
-  Text TextyBoi("Helvetica", 24, "red", "smsmsmsm");
 
-  cout << "Text before setting:" << endl;
-  TextyBoi.PrintText();
+  TextBox FillMaBox("Roboto", 24, "brown", "What's in the box? Pain", 700, 200,
+                    "red");
 
-  TextyBoi.SetText("MyFavFont", 28, "blue", "420, blaze it"); // doesn't work
-  cout << "Text after setting:" << endl;
-  TextyBoi.PrintText();
+  // Text class method calls
+  cout << "Calling Text class methods:" << endl;
+  cout << "Text font: " << FillMaBox.GetTextFont() << endl;
+  cout << "Text color: " << FillMaBox.GetTextColor() << endl;
+  cout << "Text data: " << FillMaBox.GetTextData() << endl;
+  cout << "\n";
 
-  Box BeatBox(600, 100, "red");
+  // Box class method calls
+  cout << "Calling Box class methods:" << endl;
+  cout << "Box width: " << FillMaBox.GetBoxWidth() << endl;
+  cout << "Box height: " << FillMaBox.GetBoxHeight() << endl;
+  cout << "Box border color: " << FillMaBox.GetBoxBorderColor() << endl;
+  cout << "\n";
 
-  cout << "Box before setting:" << endl;
-  BeatBox.PrintBox();
+  cout << "Printing the TextBox object" << endl;
+  FillMaBox.PrintTextBox();
+  cout << "\n";
 
-  BeatBox.SetBox(700, 200, "brown");
-  cout << "Box after setting:" << endl;
-  BeatBox.PrintBox();
+  cout << "TextBox object after setting new TextBox values" << endl;
+  FillMaBox.SetTextBox("Helvetica", 50, "Green", "New text", 500, 100, "grey");
+  FillMaBox.PrintTextBox();
+  cout << "\n";
+
+  cout << "Happy textboxing!" << endl;
 
   return 0;
 }

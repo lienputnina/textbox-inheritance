@@ -8,12 +8,12 @@ Text::Text(string textFont, int textSize, string textColor, string textData) {
   data = textData.empty() ? "lorem ipsum dolor sit amet" : textData;
 };
 
-void Text::SetText(string newFont, int newSize, string newColor,
-                   string newData) {
-  font = newFont.empty() ? "Arial" : newFont;
-  size = newSize > 0 ? newSize : 16;
-  color = newColor.empty() ? "black" : newColor;
-  data = newData.empty() ? "lorem ipsum dolor sit amet" : newData;
+void Text::SetText(string newTextFont, int newTextSize, string newTextColor,
+                   string newTextData) {
+  font = newTextFont.empty() ? "Arial" : newTextFont;
+  size = newTextSize > 0 ? newTextSize : 16;
+  color = newTextColor.empty() ? "black" : newTextColor;
+  data = newTextData.empty() ? "lorem ipsum dolor sit amet" : newTextData;
 }
 
 string Text::GetTextFont() const { return font; };
@@ -26,5 +26,4 @@ void Text::PrintText() const {
   cout << "Size: " << GetTextSize() << endl;
   cout << "Color: " << GetTextColor() << endl;
   cout << "Data: " << GetTextData() << endl;
-  cout << "\n";
 }

@@ -7,11 +7,12 @@ Box::Box(int boxWidth, int boxHeight, string box_border_color) {
   border_color = box_border_color.empty() ? "black" : box_border_color;
 };
 
-void Box::SetBox(int newWidth, int newHeight, string newBorderColor) {
+void Box::SetBox(int newBoxWidth, int newBoxHeight,
+                 string new_box_border_color) {
 
-  width = newWidth > 0 ? newWidth : 400;
-  height = newHeight > 0 ? newHeight : 90;
-  border_color = newBorderColor.empty() ? "black" : newBorderColor;
+  width = newBoxWidth > 0 ? newBoxWidth : 400;
+  height = newBoxHeight > 0 ? newBoxHeight : 90;
+  border_color = new_box_border_color.empty() ? "black" : new_box_border_color;
 };
 
 int Box::GetBoxWidth() const { return width; };
@@ -19,9 +20,7 @@ int Box::GetBoxHeight() const { return height; };
 string Box::GetBoxBorderColor() const { return border_color; };
 
 void Box::PrintBox() const {
-  cout << "Box width: " << GetBoxWidth() << endl;
-  cout << "Box height: " << GetBoxHeight() << endl;
-  cout << "Box border color: " << GetBoxBorderColor() << endl;
-
-  cout << "\n";
+  cout << "Width: " << GetBoxWidth() << endl;
+  cout << "Height: " << GetBoxHeight() << endl;
+  cout << "Border color: " << GetBoxBorderColor() << endl;
 }
