@@ -7,9 +7,9 @@ using namespace std;
 class Text {
 
   /*
-     Using the'protected' type to give the derived class access to this
-     variable
-     */
+     Using the'protected' access type to give the derived TextBox class access
+     to these variables.
+  */
 protected:
   string font;
   int size;
@@ -19,6 +19,10 @@ protected:
 public:
   Text(string font, int size, string color, string data);
 
+  /*
+  Taking in the "new" Text variables as parameters to avoid directly modifying
+  the original member variables.
+  */
   void SetText(string newTextFont, int newTextSize, string newTextColor,
                string newTextData);
 
