@@ -20,7 +20,7 @@ int main() {
   Boxy.PrintTextBox();
   cout << "\n";
 
-  cout << "TextBox properties after setting new values" << endl;
+  cout << "TextBox properties after setting new values:" << endl;
   Boxy.SetTextBox(
       "Helvetica", 50, "Green",
       "Why do programmers prefer dark mode? Because light attracts bugs.", 500,
