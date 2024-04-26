@@ -1,5 +1,6 @@
 #ifndef Text_h
 #define Text_h
+
 #include <string>
 
 using namespace std;

@@ -8,6 +8,7 @@ int main() {
 
   cout << "Text font: " << Boxy.GetTextFont() << endl;
   cout << "Text color: " << Boxy.GetTextColor() << endl;
+  cout << "Text size: " << Boxy.GetTextSize() << endl;
   cout << "Text data: " << Boxy.GetTextData() << endl;
   cout << "\n";
 

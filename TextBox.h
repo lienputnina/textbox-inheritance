@@ -1,9 +1,9 @@
 #ifndef TextBox_h
 #define TextBox_h
-#include <string>
 
 #include "./Box.h"
 #include "./Text.h"
+#include <string>
 
 /*
 Creating a TextBox class through multiple inheritance to get access to the
